@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TriangleTest {
 
-    // Tests for isValidInput()
 
     @ParameterizedTest
     @CsvSource({
@@ -25,7 +24,6 @@ class TriangleTest {
         assertEquals(expected, Triangle.isValidInput(a, b, c));
     }
 
-    // Tests for exists()
 
     @ParameterizedTest
     @CsvSource({
@@ -43,8 +41,6 @@ class TriangleTest {
 
         assertEquals(expected, Triangle.exists(a, b, c));
     }
-
-    // Tests for determineType()
 
     @ParameterizedTest
     @CsvSource({
@@ -65,7 +61,6 @@ class TriangleTest {
         assertEquals(expected, Triangle.determineType(a, b, c));
     }
 
-    // Additional boundary test
 
     @Test
     void shouldRecognizeMinimumValidTriangle() {
